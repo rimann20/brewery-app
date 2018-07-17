@@ -44,7 +44,7 @@ function getDataFromBeerApi() {
       radius: 2,
       key: 'c0bfe1046bca5568424c1cc7d09ee817',
   }
-  console.log(searchURL + 'lat=' + query.lat + '&lng=' + query.lng + '&radius=' + query.radius + '&key=' + query.key)
+  // console.log(searchURL + 'lat=' + query.lat + '&lng=' + query.lng + '&radius=' + query.radius + '&key=' + query.key)
 
   // pull brewery data
   fetch(searchURL + 'lat=' + query.lat + '&lng=' + query.lng + '&radius=' + query.radius + '&key=' + query.key)
@@ -63,7 +63,7 @@ function getDataFromBeerApi() {
       breweryLng = data.data[0].longitude;
       breweryCoords = {lat: breweryLat,lng: breweryLng};
       userCoords = {lat: userLat, lng: userLng};
-      console.log(breweryName);
+      // console.log(breweryName);
       // console.log(userCoords);
 
       var locations = [
