@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Beermapping API</title>
+
+        <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+    @font-face {
+        font-family: Argent;
+        src:url("fonts/ArgentCF-RegularItalic.ttf");
+    }
+    .argent {
+        font-family: Argent;
+    }
+    </style>
+    <style>
+    @font-face {
+        font-family: Johnston;
+        src:url("fonts/31F436_0_0.ttf");
+    }
+    .argent {
+        font-family: Johnston;
+    }
+  </style>
+
+
+  </head>
+  <body>
+
+    <div class="container">
+
+      <header role="banner">
+        <div class="inline-element"><img class="barrel-img left" src="images/barrel.png"></div>
+        <div class="inline-element"><img class="logo" src="images/logo.png"></div>
+        <div class="inline-element"><img class="barrel-img right" src="images/barrel.png"></div>
+        <h1>find the best beers near you</h1>
+      </header>
+
+
+      <div class="button-container">
+        <a class="btn btn-primary" href="#" role="button" onclick="getLocation()"><h3>SHOW ME</h3></a>
+        <div class="button-text"><h2>THE CLOSEST BREWERY</h2></div>
+      </div>
+
+      <hr class="rule">
+
+      <div class="brewery-name"></div>
+  
+
+      <div class="map-container">
+        <div id="map"></div>
+    </div>
+
+
+
+
+    
+
+    <script type="text/javascript" src="index.js"></script>
+
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBk1w3VIlOwi2UzFKJLt0gByrgZlT7o7Uw&callback=initMap">
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  </body>
+</html>
